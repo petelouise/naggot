@@ -17,8 +17,7 @@ struct FullScreenNotificationApp: App {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .edgesIgnoringSafeArea(.all)
         }
-        .windowStyle(HiddenTitleBarWindowStyle()) // Hide the title bar
-        .windowToolbarStyle(UnifiedWindowToolbarStyle(showsTitle: false))
+        .windowStyle(HiddenTitleBarWindowStyle()) // Hides the title bar, ensuring a more immersive mode
         .commands {
             CommandGroup(replacing: .newItem, addition: {})
         }
@@ -26,18 +25,17 @@ struct FullScreenNotificationApp: App {
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
-    func applicationDidFinishLaunching(_ notification: Notification) {
-        // Setup the main application window
-        if let window = NSApp.windows.first {
+    func applicationDidBecomeActive(_ notification: Notification) {
+        if let window = NSApp.keyWindow {
             setupKioskMode(window: window)
         }
     }
 
     private func setupKioskMode(window: NSWindow) {
-        window.level = .statusBar
-        window.collectionBehavior = [.canJoinAllSpaces, .fullScreenPrimary]
+        window.level = .floating // Ensures the window is always on top
+        window.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary] // Full screen across all spaces
         window.styleMask.insert(.fullScreen)
-        window.toggleFullScreen(nil)  // Attempt to toggle full screen
-        NSApp.activate(ignoringOtherApps: true)
+        window.toggleFullScreen(nil)  // Force the window into full screen
+        NSApp.activate(ignoringOtherApps: true) // Focus the app
     }
 }
