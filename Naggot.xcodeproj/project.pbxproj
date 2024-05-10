@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA16E6042BEEB14C00C6697C /* NaggotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16E6032BEEB14C00C6697C /* NaggotApp.swift */; };
+		BA16E6062BEEB14C00C6697C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16E6052BEEB14C00C6697C /* ContentView.swift */; };
+		BA16E6082BEEB14D00C6697C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA16E6072BEEB14D00C6697C /* Assets.xcassets */; };
+		BA16E60B2BEEB14D00C6697C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA16E60A2BEEB14D00C6697C /* Preview Assets.xcassets */; };
+		BA16E6162BEEB14D00C6697C /* NaggotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16E6152BEEB14D00C6697C /* NaggotTests.swift */; };
+		BA16E6202BEEB14D00C6697C /* NaggotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16E61F2BEEB14D00C6697C /* NaggotUITests.swift */; };
+		BA16E6222BEEB14D00C6697C /* NaggotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA16E6212BEEB14D00C6697C /* NaggotUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA16E6122BEEB14D00C6697C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA16E5F82BEEB14C00C6697C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA16E5FF2BEEB14C00C6697C;
+			remoteInfo = Naggot;
+		};
+		BA16E61C2BEEB14D00C6697C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA16E5F82BEEB14C00C6697C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA16E5FF2BEEB14C00C6697C;
+			remoteInfo = Naggot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA16E6002BEEB14C00C6697C /* Naggot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naggot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA16E6032BEEB14C00C6697C /* NaggotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaggotApp.swift; sourceTree = "<group>"; };
+		BA16E6052BEEB14C00C6697C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BA16E6072BEEB14D00C6697C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BA16E60A2BEEB14D00C6697C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BA16E60C2BEEB14D00C6697C /* Naggot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Naggot.entitlements; sourceTree = "<group>"; };
+		BA16E6112BEEB14D00C6697C /* NaggotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaggotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA16E6152BEEB14D00C6697C /* NaggotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaggotTests.swift; sourceTree = "<group>"; };
+		BA16E61B2BEEB14D00C6697C /* NaggotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaggotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA16E61F2BEEB14D00C6697C /* NaggotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaggotUITests.swift; sourceTree = "<group>"; };
+		BA16E6212BEEB14D00C6697C /* NaggotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaggotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA16E5FD2BEEB14C00C6697C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA16E60E2BEEB14D00C6697C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA16E6182BEEB14D00C6697C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA16E5F72BEEB14C00C6697C = {
+			isa = PBXGroup;
+			children = (
+				BA16E6022BEEB14C00C6697C /* Naggot */,
+				BA16E6142BEEB14D00C6697C /* NaggotTests */,
+				BA16E61E2BEEB14D00C6697C /* NaggotUITests */,
+				BA16E6012BEEB14C00C6697C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA16E6012BEEB14C00C6697C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA16E6002BEEB14C00C6697C /* Naggot.app */,
+				BA16E6112BEEB14D00C6697C /* NaggotTests.xctest */,
+				BA16E61B2BEEB14D00C6697C /* NaggotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA16E6022BEEB14C00C6697C /* Naggot */ = {
+			isa = PBXGroup;
+			children = (
+				BA16E6032BEEB14C00C6697C /* NaggotApp.swift */,
+				BA16E6052BEEB14C00C6697C /* ContentView.swift */,
+				BA16E6072BEEB14D00C6697C /* Assets.xcassets */,
+				BA16E60C2BEEB14D00C6697C /* Naggot.entitlements */,
+				BA16E6092BEEB14D00C6697C /* Preview Content */,
+			);
+			path = Naggot;
+			sourceTree = "<group>";
+		};
+		BA16E6092BEEB14D00C6697C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BA16E60A2BEEB14D00C6697C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BA16E6142BEEB14D00C6697C /* NaggotTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA16E6152BEEB14D00C6697C /* NaggotTests.swift */,
+			);
+			path = NaggotTests;
+			sourceTree = "<group>";
+		};
+		BA16E61E2BEEB14D00C6697C /* NaggotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BA16E61F2BEEB14D00C6697C /* NaggotUITests.swift */,
+				BA16E6212BEEB14D00C6697C /* NaggotUITestsLaunchTests.swift */,
+			);
+			path = NaggotUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA16E5FF2BEEB14C00C6697C /* Naggot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA16E6252BEEB14D00C6697C /* Build configuration list for PBXNativeTarget "Naggot" */;
+			buildPhases = (
+				BA16E5FC2BEEB14C00C6697C /* Sources */,
+				BA16E5FD2BEEB14C00C6697C /* Frameworks */,
+				BA16E5FE2BEEB14C00C6697C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Naggot;
+			productName = Naggot;
+			productReference = BA16E6002BEEB14C00C6697C /* Naggot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA16E6102BEEB14D00C6697C /* NaggotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA16E6282BEEB14D00C6697C /* Build configuration list for PBXNativeTarget "NaggotTests" */;
+			buildPhases = (
+				BA16E60D2BEEB14D00C6697C /* Sources */,
+				BA16E60E2BEEB14D00C6697C /* Frameworks */,
+				BA16E60F2BEEB14D00C6697C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA16E6132BEEB14D00C6697C /* PBXTargetDependency */,
+			);
+			name = NaggotTests;
+			productName = NaggotTests;
+			productReference = BA16E6112BEEB14D00C6697C /* NaggotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BA16E61A2BEEB14D00C6697C /* NaggotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA16E62B2BEEB14D00C6697C /* Build configuration list for PBXNativeTarget "NaggotUITests" */;
+			buildPhases = (
+				BA16E6172BEEB14D00C6697C /* Sources */,
+				BA16E6182BEEB14D00C6697C /* Frameworks */,
+				BA16E6192BEEB14D00C6697C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA16E61D2BEEB14D00C6697C /* PBXTargetDependency */,
+			);
+			name = NaggotUITests;
+			productName = NaggotUITests;
+			productReference = BA16E61B2BEEB14D00C6697C /* NaggotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA16E5F82BEEB14C00C6697C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					BA16E5FF2BEEB14C00C6697C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					BA16E6102BEEB14D00C6697C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BA16E5FF2BEEB14C00C6697C;
+					};
+					BA16E61A2BEEB14D00C6697C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BA16E5FF2BEEB14C00C6697C;
+					};
+				};
+			};
+			buildConfigurationList = BA16E5FB2BEEB14C00C6697C /* Build configuration list for PBXProject "Naggot" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA16E5F72BEEB14C00C6697C;
+			productRefGroup = BA16E6012BEEB14C00C6697C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA16E5FF2BEEB14C00C6697C /* Naggot */,
+				BA16E6102BEEB14D00C6697C /* NaggotTests */,
+				BA16E61A2BEEB14D00C6697C /* NaggotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA16E5FE2BEEB14C00C6697C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA16E60B2BEEB14D00C6697C /* Preview Assets.xcassets in Resources */,
+				BA16E6082BEEB14D00C6697C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA16E60F2BEEB14D00C6697C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA16E6192BEEB14D00C6697C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA16E5FC2BEEB14C00C6697C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA16E6062BEEB14C00C6697C /* ContentView.swift in Sources */,
+				BA16E6042BEEB14C00C6697C /* NaggotApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA16E60D2BEEB14D00C6697C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA16E6162BEEB14D00C6697C /* NaggotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA16E6172BEEB14D00C6697C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA16E6222BEEB14D00C6697C /* NaggotUITestsLaunchTests.swift in Sources */,
+				BA16E6202BEEB14D00C6697C /* NaggotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA16E6132BEEB14D00C6697C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA16E5FF2BEEB14C00C6697C /* Naggot */;
+			targetProxy = BA16E6122BEEB14D00C6697C /* PBXContainerItemProxy */;
+		};
+		BA16E61D2BEEB14D00C6697C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA16E5FF2BEEB14C00C6697C /* Naggot */;
+			targetProxy = BA16E61C2BEEB14D00C6697C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BA16E6232BEEB14D00C6697C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BA16E6242BEEB14D00C6697C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BA16E6262BEEB14D00C6697C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Naggot/Naggot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Naggot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = petelouise.Naggot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BA16E6272BEEB14D00C6697C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Naggot/Naggot.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Naggot/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = petelouise.Naggot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BA16E6292BEEB14D00C6697C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = petelouise.NaggotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Naggot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Naggot";
+			};
+			name = Debug;
+		};
+		BA16E62A2BEEB14D00C6697C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = petelouise.NaggotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Naggot.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Naggot";
+			};
+			name = Release;
+		};
+		BA16E62C2BEEB14D00C6697C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = petelouise.NaggotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Naggot;
+			};
+			name = Debug;
+		};
+		BA16E62D2BEEB14D00C6697C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = petelouise.NaggotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Naggot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA16E5FB2BEEB14C00C6697C /* Build configuration list for PBXProject "Naggot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA16E6232BEEB14D00C6697C /* Debug */,
+				BA16E6242BEEB14D00C6697C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA16E6252BEEB14D00C6697C /* Build configuration list for PBXNativeTarget "Naggot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA16E6262BEEB14D00C6697C /* Debug */,
+				BA16E6272BEEB14D00C6697C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA16E6282BEEB14D00C6697C /* Build configuration list for PBXNativeTarget "NaggotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA16E6292BEEB14D00C6697C /* Debug */,
+				BA16E62A2BEEB14D00C6697C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA16E62B2BEEB14D00C6697C /* Build configuration list for PBXNativeTarget "NaggotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA16E62C2BEEB14D00C6697C /* Debug */,
+				BA16E62D2BEEB14D00C6697C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA16E5F82BEEB14C00C6697C /* Project object */;
+}
