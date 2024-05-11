@@ -38,9 +38,9 @@ struct ContentView: View {
                 .padding()
                 .foregroundColor(.white)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(width: NSScreen.main!.frame.width, height: NSScreen.main!.frame.height)
         .background(cyclingColors ? currentColor : Color.blue)
-        .edgesIgnoringSafeArea(.all)  // Ensures the view extends into the safe area
+        .edgesIgnoringSafeArea([.top, .leading, .bottom, .trailing])
         .onReceive(timer) { _ in
             if cyclingColors {
                 currentColor = colors.randomElement() ?? .blue
