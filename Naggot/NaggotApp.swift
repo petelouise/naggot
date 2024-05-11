@@ -28,11 +28,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 private func setupFullScreen(window: NSWindow) {
     window.setFrame(NSScreen.main!.frame, display: true)
-    window.styleMask = [.fullScreen]
-    window.level = .screenSaver  // Ensures the window is always on top and does not allow app switching
+    window.styleMask = [.borderless, .fullScreen]
+    window.level = .mainMenu  // Adjusts the window level to cover the menu bar
     window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenPrimary]
-    NSApp.presentationOptions = [.fullScreen, .disableProcessSwitching, .disableMenuBarTransparency]  // Kiosk mode settings
+    NSApp.presentationOptions = [.fullScreen, .disableProcessSwitching, .disableMenuBarTransparency, .disableForceQuit, .disableSessionTermination]  // Enhanced Kiosk mode settings
     window.toggleFullScreen(nil)
-}
     }
 }
