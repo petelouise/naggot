@@ -60,16 +60,17 @@ struct ContentView: View {
                         Button("Yes") {
                             editingMessage = true
                         }
-                        .padding()
-                        .background(Color.green.opacity(0.2))
+                        .buttonStyle(.bordered)
+                        .tint(.green.opacity(0.2))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         
+
                         Button("No") {
                             NSApp.terminate(nil)
                         }
-                        .padding()
-                        .background(Color.red.opacity(0.2))
+                        .buttonStyle(.bordered)
+                        .tint(.red.opacity(0.2))
                         .foregroundColor(.white)
                         .cornerRadius(10)
                     }
