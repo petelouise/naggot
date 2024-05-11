@@ -37,12 +37,6 @@ struct ContentView: View {
             Toggle("Cycle Colors", isOn: $cyclingColors)
                 .padding()
                 .foregroundColor(.white)
-                NSApp.keyWindow?.close()
-            }
-            .padding()
-            .background(Color.red)
-            .foregroundColor(.white)
-            .cornerRadius(10)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(cyclingColors ? currentColor : Color.blue)
