@@ -60,6 +60,7 @@ struct ContentView: View {
                         Button("Yes") {
                             editingMessage = true
                         }
+                        .padding()
                         .buttonStyle(.bordered)
                         .tint(.green.opacity(0.2))
                         .foregroundColor(.white)
@@ -69,6 +70,7 @@ struct ContentView: View {
                         Button("No") {
                             NSApp.terminate(nil)
                         }
+                        .padding()
                         .buttonStyle(.bordered)
                         .tint(.red.opacity(0.2))
                         .foregroundColor(.white)
