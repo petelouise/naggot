@@ -27,8 +27,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func setupFullScreen(window: NSWindow) {
-        window.setFrame(NSScreen.main!.frame, display: true, animate: true)
+        window.setFrame(NSScreen.main!.frame, display: true)
         window.styleMask = [.fullSizeContentView, .borderless]
+        window.level = .screenSaver
+        window.isOpaque = true
+        window.backgroundColor = .clear
+        window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenAuxiliary]
+        window.ignoresMouseEvents = true
+        NSApp.presentationOptions = [.autoHideDock, .autoHideMenuBar, .disableProcessSwitching, .disableForceQuit, .disableSessionTermination]
+        window.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
         window.level = .screenSaver // Ensures the window is above most other windows, including the menu bar
         window.isOpaque = true
         window.backgroundColor = .clear
