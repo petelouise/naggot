@@ -33,8 +33,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.isOpaque = true
         window.backgroundColor = .clear
         window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenAuxiliary]
-        window.ignoresMouseEvents = true
+        window.ignoresMouseEvents = false
         NSApp.presentationOptions = [.autoHideDock, .autoHideMenuBar, .disableProcessSwitching, .disableForceQuit, .disableSessionTermination]
+        window.makeKeyAndOrderFront(nil)
+        NSApp.activate(ignoringOtherApps: true)
         window.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
         window.level = .screenSaver // Ensures the window is above most other windows, including the menu bar

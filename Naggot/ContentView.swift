@@ -14,7 +14,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .foregroundColor(.white)
             Button("Dismiss") {
-                NSApplication.shared.terminate(nil)
+                NSApp.keyWindow?.close()
             }
             .padding()
             .background(Color.red)
