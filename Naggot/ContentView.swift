@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var currentColor: Color = .blue
     let colors: [Color] = [.red, .green, .blue, .orange, .purple, .pink]
     let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
+    @FocusState private var isInputActive: Bool
 
     var body: some View {
         ZStack {
@@ -26,16 +27,24 @@ struct ContentView: View {
                 if editingMessage {
                     TextField("Edit your message", text: $userMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.largeTitle)  // Ensure font size is consistent
+                        .focused($isInputActive)
                         .padding()
+                        .onSubmit {
+                            saveMessage()  // Submit with Enter key
+                        }
+                        .onAppear {
+                            self.isInputActive = true  // Focus when appears
+                        }
                 } else {
                     Text(userMessage.isEmpty ? defaultMessage : userMessage)
                         .font(.largeTitle)
                         .foregroundColor(.white)
                 }
                 if editingMessage {
-                    Button("Save") {
-                        UserDefaults.standard.set(userMessage, forKey: "userMessage")
-                        NSApp.terminate(nil)
+                    Button(action: saveMessage) {
+                        Text("Save")
+                            .frame(maxWidth: .infinity)  // Make the entire button area clickable
                     }
                     .padding()
                     .background(Color.blue.opacity(0.2))
@@ -73,5 +82,10 @@ struct ContentView: View {
         .onAppear {
             userMessage = UserDefaults.standard.string(forKey: "userMessage") ?? ""
         }
+    }
+
+    private func saveMessage() {
+        UserDefaults.standard.set(userMessage, forKey: "userMessage")
+        NSApp.terminate(nil)  // Terminate the application after saving
     }
 }
