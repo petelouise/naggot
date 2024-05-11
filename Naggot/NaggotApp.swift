@@ -27,8 +27,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func setupFullScreen(window: NSWindow) {
-        window.setFrame(NSScreen.main!.frame, display: true)
-        window.styleMask = [.fullSizeContentView, .borderless]
+        window.setFrame(NSScreen.main!.visibleFrame, display: true, animate: true)
+        window.styleMask = [.fullSizeContentView, .borderless, .unifiedTitleAndToolbar]
         window.level = .screenSaver
         window.isOpaque = true
         window.backgroundColor = .clear
@@ -42,7 +42,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.level = .screenSaver // Ensures the window is above most other windows, including the menu bar
         window.isOpaque = true
         window.backgroundColor = .clear
-        window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenPrimary]
+        window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenAuxiliary]
         NSApp.presentationOptions = [.autoHideDock, .autoHideMenuBar, .disableProcessSwitching, .disableForceQuit, .disableSessionTermination] // Enforces a more strict kiosk mode
     }
 }
