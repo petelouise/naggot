@@ -10,31 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Spacer()
             Text("This is your full-screen notification!")
-                .font(.title)
+                .font(.largeTitle)
                 .foregroundColor(.white)
-            Spacer()
-            Button(action: {
+            Button("Dismiss") {
                 NSApplication.shared.terminate(nil)
-            }) {
-                Text("Close")
-                    .font(.title)
-                    .foregroundColor(.red)
-                    .padding()
-                    .background(Color.white)
-                    .cornerRadius(10)
             }
-            Spacer()
+            .padding()
+            .background(Color.red)
+            .foregroundColor(.white)
+            .cornerRadius(10)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.blue)
-        .edgesIgnoringSafeArea(.all)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        .edgesIgnoringSafeArea(.all)  // Ensures the view extends into the safe area
     }
 }
