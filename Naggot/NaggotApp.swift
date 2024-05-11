@@ -26,11 +26,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
-    private func setupFullScreen(window: NSWindow) {
-        window.setFrame(NSScreen.main!.frame, display: true)
-        window.styleMask.insert(.fullScreen)
-        window.level = .floating  // Keep the window always on top
-        window.collectionBehavior = [.stationary, .canJoinAllSpaces]  // Enable display across all spaces
-        window.toggleFullScreen(nil)
+private func setupFullScreen(window: NSWindow) {
+    window.setFrame(NSScreen.main!.frame, display: true)
+    window.styleMask = [.fullScreen]
+    window.level = .screenSaver  // Ensures the window is always on top and does not allow app switching
+    window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenPrimary]
+    NSApp.presentationOptions = [.fullScreen, .disableProcessSwitching, .disableMenuBarTransparency]  // Kiosk mode settings
+    window.toggleFullScreen(nil)
+}
     }
 }
