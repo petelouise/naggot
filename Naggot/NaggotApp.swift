@@ -27,12 +27,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     private func setupFullScreen(window: NSWindow) {
-        window.setFrame(NSScreen.main!.frame, display: true, animate: false)
+        window.setFrame(NSScreen.main!.frame, display: true, animate: true)
         window.styleMask = [.fullSizeContentView, .borderless, .unifiedTitleAndToolbar]
         window.level = .screenSaver
         window.isOpaque = true
         window.backgroundColor = .clear
-        window.collectionBehavior = [.fullScreenPrimary]
+        window.collectionBehavior = [.fullScreenPrimary, .canJoinAllSpaces]
         window.ignoresMouseEvents = false
         NSApp.presentationOptions = [.autoHideDock, .autoHideMenuBar, .disableProcessSwitching, .disableForceQuit, .disableSessionTermination]
         window.makeKeyAndOrderFront(nil)
