@@ -9,12 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("This is your full-screen notification!")
-            .font(.largeTitle)
-            .foregroundColor(.white)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.blue)
-            .edgesIgnoringSafeArea(.all)
+        VStack {
+            Spacer()
+            Text("This is your full-screen notification!")
+                .font(.title)
+                .foregroundColor(.white)
+            Spacer()
+            Button(action: {
+                NSApplication.shared.terminate(nil)
+            }) {
+                Text("Close")
+                    .font(.title)
+                    .foregroundColor(.red)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+            }
+            Spacer()
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.blue)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
