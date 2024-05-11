@@ -44,12 +44,17 @@ struct ContentView: View {
                 if editingMessage {
                     Button(action: saveMessage) {
                         Text("Save")
-                            .frame(maxWidth: .infinity)  // Make the entire button area clickable
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue.opacity(0.2))
+                            .cornerRadius(10)
                     }
+                    .frame(maxWidth: .infinity) // Ensure the entire button area is clickable
                     .padding()
-                    .background(Color.blue.opacity(0.2))
-                    .foregroundColor(.white)
+                    .background(Color.blue.opacity(0.2)) // Apply consistent styling
                     .cornerRadius(10)
+                    .foregroundColor(.white)
                 } else {
                     HStack {
                         Button("Yes") {
